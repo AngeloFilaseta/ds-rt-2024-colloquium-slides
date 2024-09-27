@@ -8,7 +8,7 @@
 // @import url('reveal-js/lib/font/source-sans-pro/source-sans-pro.css');
 // @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 // @import url('https://fonts.googleapis.com/css2?family=Ubuntu');
-@import url('https://fonts.googleapis.com/css2?family=Signika+Negative');
+// @import url('https://fonts.googleapis.com/css2?family=Signika+Negative');
 // @import url('https://fonts.googleapis.com/css2?family=Open+Sans');
 
 // Serif
@@ -23,11 +23,13 @@
 // @import url('https://fonts.googleapis.com/css2?family=Fredoka+One');
 
 // Monospace
-@import url('https://fonts.googleapis.com/css2?family=Inconsolata');
-@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono');
+// @import url('https://fonts.googleapis.com/css2?family=Inconsolata');
+// @import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono');
 // @import url('https://fonts.googleapis.com/css2?family=Ubuntu+Mono');
 
-// $backgroundColor: #fff;
+// @import url('https://fonts.googleapis.com/css2?family=Arial');
+
+$backgroundColor: #f4f1eb;
 
 // $mainColor: #000;
 // $headingColor: #111;
@@ -58,6 +60,23 @@ $heading3Size: 1.3em;
 $heading4Size: 1.0em;
 
 @import "reveal-js/dist/theme/template/theme";
+
+.reveal,
+.reveal h1,
+.reveal h2,
+.reveal h3,
+.reveal h4,
+.reveal h5,
+.reveal h6 {
+  font-family: "Merriweather";
+}
+
+.container{
+    display: flex;
+}
+.col{
+    flex: 1;
+}
 
 section.has-light-background {
 	$detailBackgroundColor: #bd2b0b !global;
@@ -225,7 +244,6 @@ kbd {
   color: $mainColor;
   background-color: $backgroundColor;
   border-radius: 0.2em;
-  border-style: solid;
   border-width: 0.1em;
   box-shadow: 0 0 0.1em $mainColor, 0.1em 0.1em 0em $mainColor;
   font-family: 'Inconsolata';
@@ -260,8 +278,6 @@ kbd {
 	background-position: 0.45% 99.2%;
 	background-size: 15%;
 	background-clip: border-box;
-	border-radius: 30px;
-	border-style: solid;
 	border-color: $detailBackgroundColor;
 	border-width: 0.3em;
 }
@@ -283,7 +299,6 @@ kbd {
 	// draw a red border
 	// border: 1px solid red;
 	text-align: left;
-	border: .2em dashed $detailBackgroundColor;
 	border-style: double;
 	border-radius: 1em;
 	padding: 0.5em;
@@ -353,4 +368,22 @@ html.blur-animation-light .backgrounds {
    -webkit-animation-timing-function: ease-out;
    -webkit-animation-fill-mode: forwards;
    -webkit-animation-delay: 0s;
- }
+}
+
+// CUSTOM CHAT
+#chat2 .form-control {
+border-color: transparent;
+}
+
+#chat2 .form-control:focus {
+border-color: transparent;
+box-shadow: inset 0px 0px 0px 1px transparent;
+}
+
+.divider:after,
+.divider:before {
+content: "";
+flex: 1;
+height: 1px;
+background: #0101;
+}

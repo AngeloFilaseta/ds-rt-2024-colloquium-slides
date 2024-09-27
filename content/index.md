@@ -75,7 +75,9 @@ Most visualization research focuses on enhancing GUIs by adding new features whi
 # The Alchemist Simulator Case
 - Alchemist is a general-purpose simulator that started as a Command Line Interface (CLI) and gradually evolved into a Desktop GUI.
 - Gradually, a new migration to a Web-based GUI is being conducted to enhance accessibility and usability even more.
-- image missing
+  {{< figure src="evolution.drawio.svg" >}}
+
+
 
 ---
 
@@ -97,27 +99,58 @@ Most visualization research focuses on enhancing GUIs by adding new features whi
 
 - LLMs are being used RIGHT NOW as successful tools for pair programming, code completion, and even code generation.
 
+<video width="50%" src="copilot-example.mp4" autoplay></video>
+
 ---
 
 # How can they help in simulations?
 
-Question:
-```
-Can you please generate a simulation where two devices find the best path to communicate in a self-organizing network?
-```
+<section>
+  <div class="container">
+    <div class="row d-flex justify-content-center">
+      <div class="col">
+        <div class="card" id="chat1" style="border-radius: 15px;">
+          <div class="card-header d-flex justify-content-between align-items-center p-3 bg-dark text-white border-bottom-0"
+            style="border-top-left-radius: 15px; border-top-right-radius: 15px;">
+            <i class="fas"></i>
+            <p class="mb-0 fw-bold">Alchemist LLM Companion Chat</p>
+            <i class="fas"></i>
+          </div>
+          <div class="card-body">
+            <div class="d-flex flex-row justify-content-start mb-4">
+              <img src="user.png" alt="avatar 1" style="width: 75px; height: 100%;">
+              <div class="mx-3 me-3 border bg-body" style="border-radius: 15px;">
+                <p class="px-3 small mb-0">Can you please generate a simulation where two devices in a self-organizing network find the best path to communicate?</p>
+              </div>
+            </div>
+            <div class="d-flex flex-row justify-content-end mb-4">
+              <div class="p-3 me-3 border bg-body-tertiary" style="border-radius: 15px;">
+                <p class="small mb-0">Sure! Here is the configuration file for the simulation you requested:</p>
+              </div>
+              <img src="alchemist-logo.svg" alt="avatar 1" style="width: 75px; height: 100%;">
+            </div>
+            <div class="d-flex flex-row justify-content-end mb-4">
+                <img src="file.png" style="border-radius: 15px; width: 70px;">
+                <img src="alchemist-logo.svg" alt="avatar 1" style="width: 75px; height: 100%;">
+            </div>
+            <div class="d-flex flex-row justify-content-end mb-4">
+              <div class="p-3 me-3 border bg-body-tertiary" style="border-radius: 15px; background-color: #111111">
+                <p align="right" class="text-right small mb-0">
+                    The simulation uses the <u style="color: #39c0ed;">Collektive Incarnation</u>, designed to leverage aggregate computing for modeling network behavior<br>
+                    I've also included the Web GUI <u style="color: #39c0ed;">Output Monitor</u>, allowing you to view the simulation in real-time at <u style="color: #39c0ed;">localhost:8080</u><br>
+                    For more details about the Collektive incarnation, you can refer to the <u style="color: #39c0ed;">related documentation</u><br>
+                    Would you like me to run the simulation for you?
+                </p>
+              </div>
+              <img src="alchemist-logo.svg" alt="avatar 1" style="width: 75px; height: 100%;">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
 
-Ideal Answer:
-```
-Sure! Here is the configuration file for the simulation you requested:
-*file*
-
-Its uses the Collektive incarnation, which is meant to use aggregate computing to simulate the network behavior.
-I also attached the Web GUI Output Monitor, so you can visualize the simulation in real-time at address: localhost:8080.
-
-If you want more information about the Collektive incarnation you can visit the realetd documentation.
-
-Would you like me to run the simulation for you?
-```
 ---
 # There are many tools that can be used to achieve this
 
@@ -132,6 +165,10 @@ Would you like me to run the simulation for you?
 - However, LLMs are still an underexplored field in this context, especially as supporting tools for the entire simulation lifecycle.
 - Will the UX of simulators improve in this direction?
 ---
+
+Attribution
+Flaticon Design Circle, Dimitry Miroliubov, Freepik
+
 *italic*
 
 **bold**
