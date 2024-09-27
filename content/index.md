@@ -10,26 +10,128 @@ aliases = [
 
 +++
 
+[//]: # (Narrative)
+[//]: # (HCI is about balancing usability, trying to mitigate complexity / and functionality, where we add complexity)
+[//]: # (Graphical User Interfaces are usually the way to interact with a PC, so they got studied to improve usability,)
+[//]: # (however studies are beiong conducted to interact with different methods... also mention AR and cite)
+[//]: # (simulations usually goes with a Gui, also alchemist has one)
+[//]: # (Interesting outcome of LLMs to solve problems... fast)
+[//]: # (multiple way to do so: configure simulations, interact with simulaor ans simulations.)
+[//]: # (introduction to alchemist and its story.)
+[//]: # (alchemist started of with a cli, and gradually adapted to a desktop gui,)
+[//]: # (and now to a web based gui. exlain what changes at every step.)
+[//]: # (can we go beyond this?)
+[//]: # (let's make a parallelism with the advent of copilot in idea.)
+[//]: # (example of generation of fibonacci or whatever)
+[//]: # (to create a simulation of alchemist you need to know... lot of stuff, )
+[//]: # (the dream is to  create something from zero and gradually ask the llm to something?)
+[//]: # (How? react is an example, lot of prossibilities, research for the future)
 
-# Short guide to Markdown slides
+# Evolving the Interaction with Simulators
+## Angelo Filaseta - angelo.filaseta@unibo.it
 
 ---
 
-# Headers
+# A Simulation can be useful for a number of reasons
 
-# H1
-## H2
-### H3
-#### H4
+- Simulations are essential tools for *observing* complex systems and phenomena;
+- They allow us to validate theories by comparing simulation outcomes with expected or real-world behavior;
+- For this reason, *observability* is a critical aspect of simulations;
 
 ---
 
-# Text
+# Balance
 
-normal text
+- Human-Computer Interaction (HCI) focuses on the design, evaluation, and realization of interactive computing systems for human use.
+- The effectiveness of a Human-Machine Interface (HMI) heavenly depends on factors that consider both __usability__ and __functionality__.
 
-`inline code`
+create a table where all the possibilites of scalabity and effectives presence of a gui are present, like + usability (easy to use even for non expert, but usually reduce the num,be rof functionalities) + functionality (can do a lot of stuff) 
 
+| + Usability                                                         | + Functionality                                                  |
+|---------------------------------------------------------------------|------------------------------------------------------------------|
+| Easy to use even for non-experts, but usually lacks functionalities | Can do a lot of stuff, but might be complex and confusing to use |
+
+---
+
+# So how can we improve the interaction with Simulators?
+
+Diverse fields might provide different solutions to enchanche the User Experience (UX) with Simulators:
+- *Eye-Tracking Technology*: Enhancing user interaction by tracking gaze to control simulations more naturally.
+- *Hand Gesture Recognition*: Improving intuitive interfaces by recognizing hand movements to interact with virtual environments.
+- *Augmented Reality (AR)*: Integrating real-world views with simulation data to create immersive experiences and improve training outcomes.
+  normal text
+- *Large Language Models (LLMs)*: Enabling more intelligent conversational agents in simulations for real-time feedback and assistance.
+
+---
+
+# What about more general-purpose simulators?
+
+- Graphical User Interfaces (GUIs) are usually the most practical solution in regard to general-purpose simulations.
+Most visualization research focuses on enhancing GUIs by adding new features while maintaining simplicity and usability.
+- The effort relies on following common design practices and introduce new feature without overwhelming users, ensuring that the interface remains intuitive and easy to use.
+
+---
+
+# The Alchemist Simulator Case
+- Alchemist is a general-purpose simulator that started as a Command Line Interface (CLI) and gradually evolved into a Desktop GUI.
+- Gradually, a new migration to a Web-based GUI is being conducted to enhance accessibility and usability even more.
+- image missing
+
+---
+
+# Can we even go beyond this?
+
+### Problems
+- General-purpose simulators remain inherently complex tools due to the nature of the domains they address.
+- No matter how user-friendly the interface is, new users still need to learn how to use the simulator effectively.
+- *Domain knowledge* remains a big barrier for new users.
+
+### Possible Solutions
+
+- Assist the user as much as possible, both in the process of configuring simulations and in interacting with the simulator.
+- Can Large Language Models (LLMs) help?
+
+---
+
+# We already use LLMs to save time
+
+- LLMs are being used RIGHT NOW as successful tools for pair programming, code completion, and even code generation.
+
+---
+
+# How can they help in simulations?
+
+Question:
+```
+Can you please generate a simulation where two devices find the best path to communicate in a self-organizing network?
+```
+
+Ideal Answer:
+```
+Sure! Here is the configuration file for the simulation you requested:
+*file*
+
+Its uses the Collektive incarnation, which is meant to use aggregate computing to simulate the network behavior.
+I also attached the Web GUI Output Monitor, so you can visualize the simulation in real-time at address: localhost:8080.
+
+If you want more information about the Collektive incarnation you can visit the realetd documentation.
+
+Would you like me to run the simulation for you?
+```
+---
+# There are many tools that can be used to achieve this
+
+- An example, the ReAct prompting technique [11] focuses on generating both reasoning traces and task-specific actions.
+- Moreover, the framework is also able to retrieve information from external environments, enabling for avoidance of fact hallucination.
+- However, the best way to design of an LLM depends on a variety of factors, and still needs research to be conducted.
+---
+
+# Conclusion
+
+- The interaction with simulators is a critical aspect of their usability and effectiveness.
+- However, LLMs are still an underexplored field in this context, especially as supporting tools for the entire simulation lifecycle.
+- Will the UX of simulators improve in this direction?
+---
 *italic*
 
 **bold**
