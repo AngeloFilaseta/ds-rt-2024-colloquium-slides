@@ -40,16 +40,21 @@ aliases = [
 
 ---
 
-# Balance
+# It's a matter of Balance
 
-- Human-Computer Interaction (HCI) focuses on the design, evaluation, and realization of interactive computing systems for human use.
-- The effectiveness of a Human-Machine Interface (HMI) heavenly depends on factors that consider both __usability__ and __functionality__.
+The effectiveness of a *Human-Machine Interface (HMI)* heavenly depends on factors that can balance both ...
 
-create a table where all the possibilites of scalabity and effectives presence of a gui are present, like + usability (easy to use even for non expert, but usually reduce the num,be rof functionalities) + functionality (can do a lot of stuff) 
+{{% multicol %}}{{% col %}}
+### Usability 
+{{% tick %}} Easy to use;<br>
+{{% cross %}}  Lacking in terms of functionalities.
 
-| + Usability                                                         | + Functionality                                                  |
-|---------------------------------------------------------------------|------------------------------------------------------------------|
-| Easy to use even for non-experts, but usually lacks functionalities | Can do a lot of stuff, but might be complex and confusing to use |
+{{% /col %}}{{% col %}}
+### Functionality
+{{% tick %}} Can do lot of stuff;<br>
+{{% cross %}}  Complex and confusing to use;
+{{% /col %}}
+{{% /multicol %}}
 
 ---
 

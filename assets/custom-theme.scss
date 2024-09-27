@@ -16,7 +16,7 @@
 
 // Handwriting
 
-// @import url('https://fonts.googleapis.com/css2?family=Dancing+Script');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat');
 // @import url('https://fonts.googleapis.com/css2?family=Satisfy');
 
 // Display
@@ -41,8 +41,8 @@ $mainFontSize: 2em;
 // $headingFont: 'Source Sans Pro', Helvetica, sans-serif;
 // $mainFont: 'Ubuntu';
 // $headingFont: 'Ubuntu';
-$mainFont: 'Signika Negative';
-$headingFont: 'Signika Negative';
+$mainFont: 'Montserrat';
+$headingFont: 'Montserrat';
 // $mainFont: 'Open Sans';
 // $headingFont: 'Open Sans';
 
@@ -68,7 +68,7 @@ $heading4Size: 1.0em;
 .reveal h4,
 .reveal h5,
 .reveal h6 {
-  font-family: "Merriweather";
+  font-family: "Montserrat";
 }
 
 .container{
@@ -283,7 +283,7 @@ kbd {
 }
 
 .reveal .slide-background:after {
-	content: "Authors - Title - Venue Year";
+	content: "Angelo Filaseta - Evolving the Interaction with Simulators - DS-RT 2024";
 	position: absolute;
 	bottom: 2.5%;
 	right: 6%;
