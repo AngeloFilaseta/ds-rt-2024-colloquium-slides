@@ -28,67 +28,98 @@ aliases = [
 [//]: # (How? react is an example, lot of prossibilities, research for the future)
 
 # Evolving the Interaction with Simulators
-## Angelo Filaseta - angelo.filaseta@unibo.it
+## DS-RT 2024 - Urbino, Italy, 2024
+### Angelo Filaseta - angelo.filaseta@unibo.it
 
 ---
 
-# A Simulation can be useful for a number of reasons
+# Simulations as Testing Tools
 
 - Simulations are essential tools for *observing* complex systems and phenomena;
-- They allow us to validate theories by comparing simulation outcomes with expected or real-world behavior;
+- They allow to **validate** theories by comparing simulation outcomes with expected or real-world behavior;
 - For this reason, *observability* is a critical aspect of simulations;
 
 ---
 
-# It's a matter of Balance
+# A matter of Balance
+
+{{< figure src="balance.webp" width="10%">}}
 
 The effectiveness of a *Human-Machine Interface (HMI)* heavenly depends on factors that can balance both ...
 
-{{% multicol %}}{{% col %}}
-### Usability 
-{{% tick %}} Easy to use;<br>
-{{% cross %}}  Lacking in terms of functionalities.
-
-{{% /col %}}{{% col %}}
-### Functionality
-{{% tick %}} Can do lot of stuff;<br>
-{{% cross %}}  Complex and confusing to use;
+{{% multicol %}}
+{{% col %}}
+## Usability 
+{{% tick %}} Intuitive and user-friendly, easy to use;<br>
+{{% cross %}} Usually lacking advanced features.
+{{% /col %}}
+{{% col %}}
+## Functionality
+{{% tick %}} Rich set of extensive features and capabilities;<br>
+{{% cross %}} Can be overly complex to use and understand.
 {{% /col %}}
 {{% /multicol %}}
 
 ---
 
-# So how can we improve the interaction with Simulators?
+# Improving Interaction
 
-Diverse fields might provide different solutions to enchanche the User Experience (UX) with Simulators:
-- *Eye-Tracking Technology*: Enhancing user interaction by tracking gaze to control simulations more naturally.
-- *Hand Gesture Recognition*: Improving intuitive interfaces by recognizing hand movements to interact with virtual environments.
-- *Augmented Reality (AR)*: Integrating real-world views with simulation data to create immersive experiences and improve training outcomes.
-  normal text
-- *Large Language Models (LLMs)*: Enabling more intelligent conversational agents in simulations for real-time feedback and assistance.
+Diverse fields might provide different solutions to enhance the *User Experience (UX)*
+{{% multicol %}}
+{{% col class="col-6" %}}
+{{% centered %}}
+**Eye-Tracking Technology**
+{{< figure src="eyes.jpg" width="50%">}}
+{{% /centered %}}
+{{% /col %}}
+{{% col class="col-6" %}}
+{{% centered %}}
+**Hand Gesture Recognition**
+{{< figure src="italian-hand.jpg" width="50%">}}
+{{% /centered %}}
+{{% /col %}}
+{{% col class="col-6" %}}
+{{% centered %}}
+**Augmented Reality (AR)**
+{{< figure src="ar.jpeg" width="50%">}}
+{{% /centered %}}
+{{% /col %}}
+{{% col class="col-6" %}}
+{{% centered %}}
+**Large Language Models (LLMs)**
+{{< figure src="llm.jpeg" width="50%">}}
+{{% /centered %}}
+{{% /col %}}
+{{% /multicol %}}
 
 ---
-
 # What about more general-purpose simulators?
-
-- Graphical User Interfaces (GUIs) are usually the most practical solution in regard to general-purpose simulations.
-Most visualization research focuses on enhancing GUIs by adding new features while maintaining simplicity and usability.
-- The effort relies on following common design practices and introduce new feature without overwhelming users, ensuring that the interface remains intuitive and easy to use.
+- **Graphical User Interfaces (GUIs)** are usually the most practical solution in regard to general-purpose simulations.
+- Most visualization research focus on adding features to GUIs while preserving usability.
+- By enforcing common design practices it is possible to add features while keeping the interface intuitive and user-friendly.
 
 ---
 
 # The Alchemist Simulator Case
-- Alchemist is a general-purpose simulator that started as a Command Line Interface (CLI) and gradually evolved into a Desktop GUI.
-- Gradually, a new migration to a Web-based GUI is being conducted to enhance accessibility and usability even more.
-  {{< figure src="evolution.drawio.svg" >}}
+{{% multicol %}}
+{{% col class="col-2"%}}
+{{< figure src="alchemist-logo.svg"  width="70%">}}
+{{% /col %}}
+{{% col class="col-10" %}} 
+- Alchemist started as a **general-purpose** simulator with *Command Line Interface* and gradually introduced a *Desktop GUI*.<br>
 
+- A new migration to a *Web GUI* is being conducted to enhance **accessibility** and **usability** even more.
+{{% /col %}}
+{{% /multicol %}}
 
+{{< figure src="evolution.drawio.svg" >}}
 
 ---
 
 # Can we even go beyond this?
 
 ### Problems
+
 - General-purpose simulators remain inherently complex tools due to the nature of the domains they address.
 - No matter how user-friendly the interface is, new users still need to learn how to use the simulator effectively.
 - *Domain knowledge* remains a big barrier for new users.
@@ -100,15 +131,23 @@ Most visualization research focuses on enhancing GUIs by adding new features whi
 
 ---
 
-# We already use LLMs to save time
-
-- LLMs are being used RIGHT NOW as successful tools for pair programming, code completion, and even code generation.
+# An Example of LLM usage in Development
+{{% multicol %}}
+{{% col class="col-11"%}}
+- LLMs are already used as **pair programming** tools (e.g. GitHub Copilot).
+    - and successfully speed up the development process.
+- Common applications include *code generation*, *completion*, *refactoring* and *commenting*.
+{{% /col %}}
+{{% col class="col-1" %}}
+{{< figure src="pinguin.webp" width="100%">}}
+{{% /col %}}
+{{% /multicol %}}
 
 <video width="50%" src="copilot-example.mp4" autoplay></video>
 
 ---
 
-# How can they help in simulations?
+# Possible Vision in the Simulation Domain
 
 <section>
   <div class="container">
@@ -125,7 +164,7 @@ Most visualization research focuses on enhancing GUIs by adding new features whi
             <div class="d-flex flex-row justify-content-start mb-4">
               <img src="user.png" alt="avatar 1" style="width: 75px; height: 100%;">
               <div class="mx-3 me-3 border bg-body" style="border-radius: 15px;">
-                <p class="px-3 small mb-0">Can you please generate a simulation where two devices in a self-organizing network find the best path to communicate?</p>
+                <p class="px-3 small mb-0">Can you please generate a simulation where two devices, inside a self-organizing network, find the best path to communicate?</p>
               </div>
             </div>
             <div class="d-flex flex-row justify-content-end mb-4">
@@ -139,11 +178,12 @@ Most visualization research focuses on enhancing GUIs by adding new features whi
                 <img src="alchemist-logo.svg" alt="avatar 1" style="width: 75px; height: 100%;">
             </div>
             <div class="d-flex flex-row justify-content-end mb-4">
-              <div class="p-3 me-3 border bg-body-tertiary" style="border-radius: 15px; background-color: #111111">
-                <p align="right" class="text-right small mb-0">
-                    The simulation uses the <u style="color: #39c0ed;">Collektive Incarnation</u>, designed to leverage aggregate computing for modeling network behavior<br>
-                    I've also included the Web GUI <u style="color: #39c0ed;">Output Monitor</u>, allowing you to view the simulation in real-time at <u style="color: #39c0ed;">localhost:8080</u><br>
-                    For more details about the Collektive incarnation, you can refer to the <u style="color: #39c0ed;">related documentation</u><br>
+              <div class="p-3 me-3 border bg-body-tertiary" style="border-radius: 15px;">
+                <p class="small mb-0">
+                    The simulation uses the <u style="color: #39c0ed;">Collektive Incarnation</u>,
+                    designed to leverage aggregate computing for modeling network behaviors.
+                    I've also included the Web GUI <u style="color: #39c0ed;">Output Monitor</u>, you can view the simulation in real-time at <u style="color: #39c0ed;">localhost:8080</u>.
+                    For more details about the Collektive incarnation, you can refer to the <u style="color: #39c0ed;">related documentation</u>.<br>
                     Would you like me to run the simulation for you?
                 </p>
               </div>
@@ -157,422 +197,47 @@ Most visualization research focuses on enhancing GUIs by adding new features whi
 </section>
 
 ---
-# There are many tools that can be used to achieve this
+# Lot of Unexplored Possibilities
 
-- An example, the ReAct prompting technique [11] focuses on generating both reasoning traces and task-specific actions.
-- Moreover, the framework is also able to retrieve information from external environments, enabling for avoidance of fact hallucination.
-- However, the best way to design of an LLM depends on a variety of factors, and still needs research to be conducted.
+{{% multicol %}}
+{{% col class="col-7" %}} 
+- There are many models and techniques available for applying LLMs to specific use cases.
+
+- An example, the **ReAct (Reason + Act)** prompting technique focuses on generating both *reasoning traces* and *task-specific actions*.
+    - Moreover, the framework is also able to retrieve information from external environments (e.g. Wikipedia).
+
+{{< figure src="question.png" >}}
+{{% /col %}}
+{{% col %}}
+{{< figure src="answer.png" >}}
+{{% /col %}}
+{{% /multicol %}}
+
 ---
 
 # Conclusion
 
-- The interaction with simulators is a critical aspect of their usability and effectiveness.
-- However, LLMs are still an underexplored field in this context, especially as supporting tools for the entire simulation lifecycle.
-- Will the UX of simulators improve in this direction?
----
+- The inclusion of additional supporting tools in simulators could result to be very beneficial in terms of UX;
+  - As of today, *LLMs* are promising tools, already used in similar contexts.
 
-Attribution
-Flaticon Design Circle, Dimitry Miroliubov, Freepik
+- Will simulators embrace new technologies to improve the User eXperience?
+- How to *effectively design* an LLM that can assist users in interacting with simulations?
+    - And what are the most important **features to include**?
 
-*italic*
 
-**bold**
-
-**_emphasized_**
-
-*__emphasized alternative__*
-
-~~strikethrough~~
-
-[link](http://www.google.com)
+{{< figure src="thinking.webp" width="10%">}}
 
 ---
 
-# Lists and enums
+# Thank you for your attention!
 
-1. First ordered list item
-1. Another item
-    * Unordered sub-list.
-    * with two items
-        * another sublist
-            1. With a sub-enum
-            1. yay!
-1. Actual numbers don't matter, just that it's a number
-  1. Ordered sub-list
-1. And another item.
+{{< figure src="questions.webp" width="15%">}}
 
----
+##### Some Media Attributions are required
 
-# Inline images
+<small>
 
-![Alternative text](https://upload.wikimedia.org/wikipedia/commons/6/6c/Scavolino_innevata.jpg)
+- [Flaticon](https://www.flaticon.com/) has been used to retrieve some icons: credits to *Design Circle*, *Dimitry Miroliubov*, *Freepik*;
+- [Giphy](https://giphy.com/) has been used to retrieve some gifs and stickers, credits to *Mostly ADHD Comics*, *Bratcole*, *WimpyKid*.
 
----
-
-## Fallback to shortcodes for resizing
-
-Autoresize specifying
-
-* `max-w` (percent of parent element width) and/or `max-h` (percent of viewport height) as max sizes , and
-* `width` and/or `height` as *exact* sizes (as percent of viewport size)
-
-{{< figure src="https://upload.wikimedia.org/wikipedia/commons/6/6c/Scavolino_innevata.jpg" height="20">}}
-
----
-
-## Multi-column slide
-
-{{% multicol %}}{{% col %}}
-Column 1
-{{% /col %}}{{% col %}}
-Column 2
-{{% /col %}}{{% /multicol %}}
-
-{{% multicol %}}
-{{% col class="col-8" %}}
-Larger columns using bootstrap
-{{% /col %}}
-{{% col %}}
-[Link to bootstrap grid system](https://getbootstrap.com/docs/4.0/layout/grid/)
-{{% /col %}}
-{{% /multicol %}}
-
-
----
-
-## Tick and Cross
-
-* {{% tick %}} This is something good
-* {{% cross %}} This is something bad
-
----
-
-## Chart.js
-
-{{< chart >}}
-{
-    type: 'bar',
-    data: {
-        labels: ['Red', 'Blue', 'Yellow', 'Green', 'Purple', 'Orange'],
-        datasets: [{
-            label: 'Bar Chart',
-            data: [12, 19, 18, 16, 13, 14],
-            backgroundColor: [
-                'rgba(255, 99, 132, 0.2)',
-                'rgba(54, 162, 235, 0.2)',
-                'rgba(255, 206, 86, 0.2)',
-                'rgba(75, 192, 192, 0.2)',
-                'rgba(153, 102, 255, 0.2)',
-                'rgba(255, 159, 64, 0.2)'
-            ],
-            borderColor: [
-                'rgba(255, 99, 132, 1)',
-                'rgba(54, 162, 235, 1)',
-                'rgba(255, 206, 86, 1)',
-                'rgba(75, 192, 192, 1)',
-                'rgba(153, 102, 255, 1)',
-                'rgba(255, 159, 64, 1)'
-            ],
-            borderWidth: 1
-        }]
-    },
-    options: {
-        maintainAspectRatio: false,
-        scales: {
-            yAxes: [{
-                ticks: {
-                    beginAtZero: true
-                }
-            }]
-        }
-    }
-}
-{{< /chart >}}
-
----
-
-## FontAwesome
-
-<i class="fa-solid fa-mug-hot"></i>
-<i class="fa-solid fa-lemon"></i>
-<i class="fa-solid fa-flask"></i>
-<i class="fa-solid fa-apple-whole"></i>
-<i class="fa-solid fa-bacon"></i>
-<i class="fa-solid fa-beer-mug-empty"></i>
-<i class="fa-solid fa-pepper-hot"></i>
-
----
-
-## Bootstrap 1
-
-<div class="card w-100" >
-  <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e9/View_of_Cesena_from_the_Abbey.jpg/1920px-View_of_Cesena_from_the_Abbey.jpg" class="card-img-top" alt="...">
-  <div class="card-body">
-    <h5 class="card-title">Card title</h5>
-    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-    <a href="#" class="btn btn-primary">Go somewhere</a>
-  </div>
-</div>
-
----
-
-## Bootstrap 2
-
-<button type="button" class="btn btn-primary">Primary</button>
-<button type="button" class="btn btn-secondary">Secondary</button>
-<button type="button" class="btn btn-success">Success</button>
-<button type="button" class="btn btn-danger">Danger</button>
-<button type="button" class="btn btn-warning">Warning</button>
-<button type="button" class="btn btn-info">Info</button>
-<button type="button" class="btn btn-light">Light</button>
-<button type="button" class="btn btn-dark">Dark</button>
-
-<button type="button" class="btn btn-link">Link</button>
-
----
-
-## Low res, plain markdown
-
-![](https://upload.wikimedia.org/wikipedia/commons/thumb/6/6c/Scavolino_innevata.jpg/260px-Scavolino_innevata.jpg)
-
----
-
-## Hi res, plain markdown
-
-![](https://upload.wikimedia.org/wikipedia/commons/6/6c/Scavolino_innevata.jpg)
-
----
-
-{{< slide background-image="https://upload.wikimedia.org/wikipedia/commons/6/6c/Scavolino_innevata.jpg" >}}
-
-# Large images as background
-## (May affect printing)
-
----
-
-
-{{< slide background-video="https://github.com/DanySK/slides-2024-acsos-imageonomics/raw/master/content/nonnadir.mkv" background-video-loop="true" background-video-muted="true" background-opacity="0.95">}}
-
-# Video background
-
----
-
-# $$\LaTeX{}$$
-
-
-Inline equations like $E=mc^2$
-
-$$\frac{n!}{k!(n-k)!} = \binom{n}{k}$$
-
----
-
-# Code snippets
-
-
-```kotlin
-val x = pippo
-```
-
-```go
-package main
-
-import "fmt"
-
-func main() {
-    fmt.Println("Hello world!")
-}
-```
-
----
-
-# Tables
-
-Colons can be used to align columns.
-
-| Tables        | Are           | Cool  |
-| ------------- |:-------------:| -----:|
-| col 3 is      | right-aligned | $1600 |
-| col 2 is      | centered      |   $12 |
-| zebra stripes | are neat      |    $1 |
-
-There must be at least 3 dashes separating each header cell.
-The outer pipes (|) are optional, and you don't need to make the
-raw Markdown line up prettily. You can also use inline Markdown.
-
----
-
-# Quotes
-
-> Multiple
-> lines
-> of
-> a
-> single
-> quote
-> get
-> joined
-
-> Very long one liners of Markdown text automatically get broken into a multiline quotation, which is then rendered in the slides.
-
----
-
-# Fragments
-
-* {{< frag c="pluto" >}}
-* {{< frag c="pluto" >}}
-* {{< frag c="pluto" >}}
-
----
-
-# Stacking images with Fragments
-{{% multicol %}}
-{{% col %}}
-<p class="fragment" data-fragment-index="0">Pippo</p>
-<p class="fragment" data-fragment-index="1">Pluto</p>
-<p class="fragment" data-fragment-index="2">Paperino</p>
-{{%/ col %}}
-
-{{% col %}}
-<div class="r-stack">
-  <img
-    class="fragment current-visible"
-    data-fragment-index="0"
-    src="https://www.topolino.it/wp-content/uploads/2019/12/pippointera.png"
-    width="450"
-    height="300"
-  />
-  <img
-    class="fragment current-visible"
-    data-fragment-index="1"
-    src="https://www.topolino.it/wp-content/uploads/2019/12/plutointera.png"
-    width="300"
-    height="450"
-  />
-  <img
-    class="fragment current-visible"
-    data-fragment-index="2"
-    src="https://it.wikifur.com/w/images/thumb/6/6f/Donald_Duck.png/362px-Donald_Duck.png"
-    width="400"
-    height="400"
-  />
-</div>
-{{%/ col %}}
-
-{{%/ multicol %}}
-
-
----
-
-# Graphs via Gravizo
-
-{{< gravizo "Example Gravizo graph" >}}
-  digraph G {
-    aize ="4,4";
-    main [shape=box];
-    main -> parse [weight=8];
-    parse -> execute;
-    main -> init [style=dotted];
-    main -> cleanup;
-    execute -> { make_string; printf}
-    init -> make_string;
-    edge [color=red];
-    main -> printf [style=bold,label="100 times"];
-    make_string [label="make a string"];
-    node [shape=box,style=filled,color=".7 .3 1.0"];
-    execute -> compare;
-  }
-{{< /gravizo >}}
-
----
-
-# Graphs via mermaid.js
-
-```mermaid
-classDiagram
-  Class01 <|-- AveryLongClass : Coosssl
-  Class03 *-- Class04
-  Class05 o-- Class06
-  Class07 .. Class08
-  Class09 --> C2 : Where am i?
-  Class09 --* C3
-  Class09 --|> Class07
-  Class07 : equals()
-  Class07 : Object[] elementData
-  Class01 : size()
-  Class01 : int chimp
-  Class01 : int gorillasaaaaaaaaaaaaaaaaaaaaaa
-  Class08 <--> C2: Cool label
-```
-
----
-
-
-# Graphs via mermaid.js with options
-
-```mermaid
-%%{init: {'theme':'default', 'themeVariables': { 'fontSize': '.34em', 'fontFamily': 'verdana' }}}%%
-classDiagram
-  Class01 <|-- AveryLongClass : Coosssl
-  Class03 *-- Class04
-  Class05 o-- Class06
-  Class07 .. Class08
-  Class09 --> C2 : Where am i?
-  Class09 --* C3
-  Class09 --|> Class07
-  Class07 : equals()
-  Class07 : Object[] elementData
-  Class01 : size()
-  Class01 : int chimp
-  Class01 : int gorillasaaaaaaaaaaaaaaaaaaaaaa
-  Class08 <--> C2: Cool label
-```
-
-
----
-# Graphs via mermaid.js 2
-
-```mermaid
-graph TD
-  SL([fa:fa-user second level]) --> L[solution]
-  L -- solution email --> db[(mysql)]
-  db --> X[automatic]
-  X --> CM([fa:fa-users first level])
-  db -- Email --> c([customer support]);
-```
-
----
-
-# Graphs via mermaid.js 3
-
-```mermaid
-gitGraph
-  commit id: "Initialize project"
-  commit id: "Make some changes"
-  branch develop
-  checkout develop
-  commit
-  commit
-  checkout main
-  merge develop
-  commit
-  commit
-```
-
----
-
-# Keystrokes
-
-<kbd>Ctrl</kbd> + <kbd>Alt</kbd> + <kbd>Del</kbd>
-
----
-
-# QR code
-
-{{% qrcode data="https://www.google.com" %}}
-
----
-
-# Import shared slides
-
-<!-- write-here "shared-slides/devops/devops-intro.md" -->
-<!-- end-write -->
+</small>
