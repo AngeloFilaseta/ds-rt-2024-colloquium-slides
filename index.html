@@ -31,23 +31,12 @@
 </section><section>
 <h1 id="interacting-with-simulations">Interacting with Simulations</h1>
 <ul>
-<li>Simulations are essential tools for <em>observing</em> complex systems and phenomena;
+<li>
+<p>Simulations are essential tools for <em>observing</em> complex systems and phenomena;</p>
 <ul>
-<li>They allow to <strong>validate</strong> theories by comparing simulation outcomes with expected or real-world behavior;</li>
+<li>They allow to <strong>validate</strong> theories by comparing outcomes with expected or real-world behavior;</li>
 </ul>
 </li>
-</ul>
-
-<div class="container">
-    <div class="row w-100 "><div class="col text-center"><figure><img src="eye.png" width="15%">
-</figure>
-</div>
-<div class="col text-center"><figure><img src="left-click.png" width="15%">
-</figure>
-</div>
-</div>
-</div>
-<ul>
 <li>
 <p>For this reason, <em>observability</em> is a crucial aspect of simulations;</p>
 <ul>
@@ -55,9 +44,19 @@
 </ul>
 </li>
 <li>
-<p>Another key aspect is <em>interaction</em>, since changing the simulation description can lead to different outcomes;</p>
+<p>Another key aspect is <em>interaction</em>, since changing the simulation specification can lead to different outcomes;</p>
 </li>
 </ul>
+
+<div class="container">
+    <div class="row w-100 "><div class="col text-center"><figure><img src="eye.png" width="25%">
+</figure>
+</div>
+<div class="col text-center"><figure><img src="left-click.png" width="25%">
+</figure>
+</div>
+</div>
+</div>
 </section><section>
 <h1 id="a-matter-of-balance">A matter of Balance</h1>
 <figure><img src="balance.webp" width="10%">
@@ -81,34 +80,51 @@ Can be overly complex to use and understand.</p>
 </div>
 </div>
 </section><section>
-<h1 id="improving-interaction">Improving Interaction</h1>
+<h3 id="improving-human-machine-interaction">Improving Human-Machine Interaction</h3>
 <ul>
-<li>Diverse fields might provide different solutions to enhance the <em>User Experience (UX)</em>:</li>
+<li>Diverse fields provide diverse solutions to improve <em>Human-Machine Interaction (HCI)</em>:</li>
 </ul>
 
 <div class="container">
     <div class="row w-100 "><div class="col col-6"><div style="text-align: center; padding-right: 0em;">
-    <p><strong>Eye-Tracking Technology</strong></p>
-<figure><img src="eyes.jpg" width="50%">
+    <div class="fragment" data-fragment-index="0">
+<p><strong>Eye-Tracking Technology</strong><small> [1]</small></p>
+<figure><img src="eyes.jpg" width="40%">
 </figure>
+<p><small>[1] A. Poole and L. J. Ball, “Eye Tracking in HCI and Usability”,<br> Research, IGI Global, 2006</small></p>
+</div>
 </div>
 </div>
 <div class="col col-6"><div style="text-align: center; padding-right: 0em;">
-    <p><strong>Hand Gesture Recognition</strong></p>
-<figure><img src="italian-hand.jpg" width="50%">
+    <div class="fragment" data-fragment-index="1">
+<p><strong>Hand Gesture Recognition</strong><small> [2]</small></p>
+<figure><img src="italian-hand.jpg" width="40%">
 </figure>
+<p><small> [2] D. Sarma and M. K. Bhuyan, “Methods, databases and recent advancement of vision-based hand gesture recognition for hci systems: A review”,<br> SN Computer Science, 2021</small></p>
+</div>
 </div>
 </div>
 <div class="col col-6"><div style="text-align: center; padding-right: 0em;">
-    <p><strong>Augmented Reality (AR)</strong></p>
-<figure><img src="ar.jpeg" width="50%">
+    <div class="fragment" data-fragment-index="2">
+<p><strong>Augmented Reality (AR)</strong><small> [3]</small></p>
+<figure><img src="ar.jpeg" width="40%">
 </figure>
+<p><small> [3] L. Jud, J. Fotouhi, O. Andronic, A. Aichmair, G. Osgood,
+N. Navab, and M. Farshad, “Applicability of augmented reality in
+orthopedic surgery – a systematic review,”<br> BMC Musculoskeletal
+Disorders, 2020 </small></p>
+</div>
 </div>
 </div>
 <div class="col col-6"><div style="text-align: center; padding-right: 0em;">
-    <p><strong>Large Language Models (LLMs)</strong></p>
-<figure><img src="llm.jpeg" width="50%">
+    <div class="fragment" data-fragment-index="3">
+<p><strong>Large Language Models (LLMs)</strong><small> [4]</small></p>
+<figure><img src="llm.jpeg" width="40%">
 </figure>
+<p><small>[4] S. Kapania, R. Wang, T. J.-J. Li, T. Li, and H. Shen, “”i’m categorizing
+llm as a productivity tool”: Examining ethics of llm use in hci research
+practices,” 2024.</small></p>
+</div>
 </div>
 </div>
 </div>
@@ -117,8 +133,15 @@ Can be overly complex to use and understand.</p>
 <h1 id="what-about-more-general-purpose-simulators">What about more general-purpose simulators?</h1>
 <ul>
 <li><strong>Graphical User Interfaces (GUIs)</strong> are usually the most practical solution in regard to general-purpose simulations.</li>
-<li>Most visualization research focus on adding features to GUIs while preserving usability.</li>
-<li>By enforcing common design practices it is possible to add features while keeping the interface intuitive and user-friendly.</li>
+</ul>
+<figure><img src="gui.gif" width="40%">
+</figure>
+<ul>
+<li>Most research focus on <strong>adding features</strong> to GUIs while <strong>preserving their usability</strong>.
+<ul>
+<li>By enforcing <em>common design practices</em> it is possible to add features while keeping the interface intuitive and user-friendly.</li>
+</ul>
+</li>
 </ul>
 </section><section>
 <h1 id="the-alchemist-simulator-case">The Alchemist Simulator Case</h1>
@@ -129,7 +152,7 @@ Can be overly complex to use and understand.</p>
 </div>
 <div class="col col-10"><ul>
 <li>
-<p>Alchemist started as a <strong>general-purpose</strong> simulator with <em>Command Line Interface</em> and gradually introduced a <em>Desktop GUI</em>.<br></p>
+<p>Alchemist<small>[5]</small> started as a <strong>general-purpose</strong> simulator with <em>Command Line Interface</em> and gradually introduced a <em>Desktop GUI</em>.<br></p>
 </li>
 <li>
 <p>A new migration to a <em>Web GUI</em> is being conducted to enhance <strong>accessibility</strong> and <strong>usability</strong> even more.</p>
@@ -138,30 +161,45 @@ Can be overly complex to use and understand.</p>
 </div>
 </div>
 </div>
-<figure><img src="evolution.drawio.svg">
+<figure><img src="evolution.drawio.svg" width="75%">
 </figure>
 
+<small style="text-align: left">
+[5] Pianini, D., Montagna, S., &amp; Viroli, M. (2013). Chemical-oriented simulation of computational systems with ALCHEMIST. Journal of Simulation, 7(3), 202–215.<br>
+</small>
 </section><section>
-<h1 id="can-we-even-go-beyond-this">Can we even go beyond this?</h1>
-<h3 id="problems">Problems</h3>
+<h1 id="is-it-possible-to-improve-ux-even-more">Is it possible to improve UX even more?</h1>
+<div>
 <ul>
-<li>General-purpose simulators remain inherently complex tools due to the nature of the domains they address.</li>
-<li>No matter how user-friendly the interface is, new users still need to learn how to use the simulator effectively.</li>
-<li><em>Domain knowledge</em> remains a big barrier for new users.</li>
+<li>General-purpose simulators remain <strong>inherently complex tools</strong> due to the nature of the domains they address.</li>
+<li>No matter how user-friendly the interface is, <em>new users still need to learn how to use the simulator effectively</em>.</li>
+<li><strong>Domain knowledge</strong> remains a big barrier for new users, especially if documentation is outdated<small>(😔)</small> or absent<small>(😭)</small>.</li>
 </ul>
-<h3 id="possible-solutions">Possible Solutions</h3>
+</div>
+<div class="fragment pt-5" data-fragment-index="0">
+<h2 id="simplifying-the-learning-experience">Simplifying the Learning Experience</h2>
+<h5 id="and-making-it-less-boring">and making it less boring</h5>
 <ul>
-<li>Assist the user as much as possible, both in the process of configuring simulations and in interacting with the simulator.</li>
-<li>Can Large Language Models (LLMs) help?</li>
+<li>
+<p><strong>No one</strong> likes to read long manuals or endless pages of documentation;</p>
+</li>
+<li>
+<p>Users needs a way to learn how to set-up simulations and interact with them as quickly as possible;</p>
+</li>
+<li>
+<p>Could <strong>Large Language Models (LLMs)</strong> enhance this assistance?</p>
+</li>
 </ul>
+</div>
 </section><section>
-<h1 id="an-example-of-llm-usage-in-development">An Example of LLM usage in Development</h1>
+<h2 id="usage-of-large-language-models-in-other-contexts">Usage of Large Language Models in other contexts</h2>
+<h3 id="pair-programming">Pair Programming</h3>
 
 <div class="container">
     <div class="row w-100 "><div class="col col-11"><ul>
-<li>LLMs are already used as <strong>pair programming</strong> tools (e.g. GitHub Copilot).
+<li>LLMs are already successfully used as <strong>pair programming</strong> tools (e.g. GitHub Copilot)<strong>*</strong>;
 <ul>
-<li>and successfully speed up the development process.</li>
+<li>and gosh, if they can speed up the development process!</li>
 </ul>
 </li>
 <li>Common applications include <em>code generation</em>, <em>completion</em>, <em>refactoring</em> and <em>commenting</em>.</li>
@@ -172,10 +210,14 @@ Can be overly complex to use and understand.</p>
 </div>
 </div>
 </div>
-<p><video width="50%" src="copilot-example.mp4" autoplay=""></video></p>
+<p></p><figure><img src="copilot-example.gif" width="40%">
+</figure>
+
+<small><strong>*</strong> Github Copilot - Your AI pair programmer: <a href="https://github.com/features/copilot">https://github.com/features/copilot</a></small><p></p>
 </section><section>
-<h1 id="possible-vision-in-the-simulation-domain">Possible Vision in the Simulation Domain</h1>
-<section>
+<h1 id="vision---a-possible-application">Vision - A possible application</h1>
+<h3 id="llm-companion-for-assisting-in-simulation-development">LLM Companion for assisting in Simulation Development</h3>
+<section class="pt-5">
   <div class="container">
     <div class="row d-flex justify-content-center">
       <div class="col">
@@ -186,29 +228,29 @@ Can be overly complex to use and understand.</p>
             <i class="fas"></i>
           </div>
           <div class="card-body">
-            <div class="d-flex flex-row justify-content-start mb-4">
+            <div class="fragment d-flex flex-row justify-content-start mb-4" data-fragment-index="0">
               <img src="user.png" alt="avatar 1" style="width: 75px; height: 100%;">
               <div class="mx-3 me-3 border bg-body" style="border-radius: 15px;">
                 <p class="px-3 small mb-0">Can you please generate a simulation where two devices, inside a self-organizing network, find the best path to communicate?</p>
               </div>
             </div>
-            <div class="d-flex flex-row justify-content-end mb-4">
+            <div class="fragment d-flex flex-row justify-content-end mb-4" data-fragment-index="1">
               <div class="p-3 me-3 border bg-body-tertiary" style="border-radius: 15px;">
                 <p class="small mb-0">Sure! Here is the configuration file for the simulation you requested:</p>
               </div>
               <img src="alchemist-logo.svg" alt="avatar 1" style="width: 75px; height: 100%;">
             </div>
-            <div class="d-flex flex-row justify-content-end mb-4">
+            <div class="fragment d-flex flex-row justify-content-end mb-4" data-fragment-index="2">
                 <img src="file.png" style="border-radius: 15px; width: 70px;">
                 <img src="alchemist-logo.svg" alt="avatar 1" style="width: 75px; height: 100%;">
             </div>
-            <div class="d-flex flex-row justify-content-end mb-4">
+            <div class="fragment d-flex flex-row justify-content-end mb-4" data-fragment-index="3">
               <div class="p-3 me-3 border bg-body-tertiary" style="border-radius: 15px;">
                 <p class="small mb-0">
-                    The simulation uses the <u style="color: #39c0ed;">Collektive Incarnation</u>,
+                    The simulation uses the <u style="color: #39c0ed;">Collektive Incarnation</u><small>[6]</small>, an implementation
                     designed to leverage aggregate computing for modeling network behaviors.
                     I've also included the Web GUI <u style="color: #39c0ed;">Output Monitor</u>, you can view the simulation in real-time at <u style="color: #39c0ed;">localhost:8080</u>.
-                    For more details about the Collektive incarnation, you can refer to the <u style="color: #39c0ed;">related documentation</u>.<br>
+                    For more details about the Collektive incarnation, you can refer to the <u style="color: #39c0ed;">related documentation</u>.
                     Would you like me to run the simulation for you?
                 </p>
               </div>
@@ -219,6 +261,9 @@ Can be overly complex to use and understand.</p>
       </div>
     </div>
   </div>
+<small>
+[6] Cortecchia, A., (2024). Multiplatform Self-Organizing Systems Through a Kotlin-MP Implementation of Aggregate Computing. International Conference on ACSOS 2024.<br>
+</small>
 </section>
 </section><section>
 <h1 id="lot-of-unexplored-possibilities">Lot of Unexplored Possibilities</h1>
@@ -226,10 +271,10 @@ Can be overly complex to use and understand.</p>
 <div class="container">
     <div class="row w-100 "><div class="col col-7"><ul>
 <li>
-<p>There are many models and techniques available for applying LLMs to specific use cases.</p>
+<p>There are <em>many models and techniques</em> available for applying LLMs to specific use cases.</p>
 </li>
 <li>
-<p>An example, the <strong>ReAct (Reason + Act)</strong> prompting technique focuses on generating both <em>reasoning traces</em> and <em>task-specific actions</em>.</p>
+<p>An example, the <strong>ReAct (Reason + Act)</strong> prompting technique <small>[7]</small> focuses on generating both <em>reasoning traces</em> and <em>task-specific actions</em>.</p>
 <ul>
 <li>Moreover, the framework is also able to retrieve information from external environments (e.g. Wikipedia).</li>
 </ul>
@@ -243,6 +288,10 @@ Can be overly complex to use and understand.</p>
 </div>
 </div>
 </div>
+<p><small>[7] S. Yao, J. Zhao, D. Yu, N. Du, I. Shafran, K. R. Narasimhan, and
+Y. Cao, “React: Synergizing reasoning and acting in language models,”
+in The Eleventh International Conference on Learning Representations,
+ICLR 2023, Kigali, Rwanda, May 1-5, 2023. OpenReview.net, 2023.</small></p>
 </section><section>
 <h1 id="conclusion">Conclusion</h1>
 <ul>
@@ -256,7 +305,7 @@ Can be overly complex to use and understand.</p>
 <p>Will simulators embrace new technologies to improve the User eXperience?</p>
 </li>
 <li>
-<p>How to <em>effectively design</em> an LLM that can assist users in interacting with simulations?</p>
+<p>How to <em>effectively design</em> a LLM that can assist users in interacting with simulations?</p>
 <ul>
 <li>And what are the most important <strong>features to include</strong>?</li>
 </ul>
@@ -267,6 +316,7 @@ Can be overly complex to use and understand.</p>
 
 </section><section>
 <h1 id="thank-you-for-your-attention">Thank you for your attention!</h1>
+<p><small> <strong>Angelo Filaseta</strong> - <a href="mailto:angelo.filaseta@unibo.it">angelo.filaseta@unibo.it</a></small></p>
 <figure><img src="questions.webp" width="15%">
 </figure>
 
@@ -275,6 +325,7 @@ Can be overly complex to use and understand.</p>
 <ul>
 <li><a href="https://www.flaticon.com/">Flaticon</a> has been used to retrieve some icons: credits to <em>Design Circle</em>, <em>Dimitry Miroliubov</em>, <em>Freepik</em>;</li>
 <li><a href="https://giphy.com/">Giphy</a> has been used to retrieve some gifs and stickers, credits to <em>Mostly ADHD Comics</em>, <em>Bratcole</em>, <em>WimpyKid</em>.</li>
+<li><a href="https://www.vecteezy.com/">Vecteezy.com</a> has been used to retrieve some videso, credits to <em>shutter2u</em>.</li>
 </ul>
 </small></section>
 
