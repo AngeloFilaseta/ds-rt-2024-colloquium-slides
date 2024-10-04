@@ -1,11 +1,11 @@
 
 +++
 
-title = "Guide for writing markdown slides"
-description = "A Hugo theme for creating Reveal.js presentations"
+title = "DS-RT 2024 Colloquium Slides"
+description = "DS-RT 2024 Colloquium Slides"
 outputs = ["Reveal"]
 aliases = [
-    "/guide/"
+    "/ds-rt/"
 ]
 
 +++
@@ -33,11 +33,24 @@ aliases = [
 
 ---
 
-# Simulations as Testing Tools
+# Interacting with Simulations
 
 - Simulations are essential tools for *observing* complex systems and phenomena;
-- They allow to **validate** theories by comparing simulation outcomes with expected or real-world behavior;
-- For this reason, *observability* is a critical aspect of simulations;
+  - They allow to **validate** theories by comparing simulation outcomes with expected or real-world behavior;
+
+{{% multicol %}}
+{{% col class="text-center"%}}
+{{< figure src="eye.png" width="15%">}}
+{{% /col %}}
+{{% col class="text-center"%}}
+{{< figure src="left-click.png" width="15%">}}
+{{% /col %}}
+{{% /multicol %}}
+
+- For this reason, *observability* is a crucial aspect of simulations;
+  - A **graphical representation** is highly beneficial for visualizing how a system evolves over time.
+
+- Another key aspect is *interaction*, since changing the simulation description can lead to different outcomes;
 
 ---
 
@@ -64,7 +77,8 @@ The effectiveness of a *Human-Machine Interface (HMI)* heavenly depends on facto
 
 # Improving Interaction
 
-Diverse fields might provide different solutions to enhance the *User Experience (UX)*
+- Diverse fields might provide different solutions to enhance the *User Experience (UX)*:
+
 {{% multicol %}}
 {{% col class="col-6" %}}
 {{% centered %}}
