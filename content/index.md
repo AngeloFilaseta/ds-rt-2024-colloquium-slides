@@ -36,21 +36,21 @@ aliases = [
 # Interacting with Simulations
 
 - Simulations are essential tools for *observing* complex systems and phenomena;
-  - They allow to **validate** theories by comparing simulation outcomes with expected or real-world behavior;
-
-{{% multicol %}}
-{{% col class="text-center"%}}
-{{< figure src="eye.png" width="15%">}}
-{{% /col %}}
-{{% col class="text-center"%}}
-{{< figure src="left-click.png" width="15%">}}
-{{% /col %}}
-{{% /multicol %}}
+  - They allow to **validate** theories by comparing outcomes with expected or real-world behavior;
 
 - For this reason, *observability* is a crucial aspect of simulations;
   - A **graphical representation** is highly beneficial for visualizing how a system evolves over time.
 
-- Another key aspect is *interaction*, since changing the simulation description can lead to different outcomes;
+- Another key aspect is *interaction*, since changing the simulation specification can lead to different outcomes;
+
+{{% multicol %}}
+{{% col class="text-center"%}}
+{{< figure src="eye.png" width="25%">}}
+{{% /col %}}
+{{% col class="text-center"%}}
+{{< figure src="left-click.png" width="25%">}}
+{{% /col %}}
+{{% /multicol %}}
 
 ---
 
@@ -75,33 +75,59 @@ The effectiveness of a *Human-Machine Interface (HMI)* heavenly depends on facto
 
 ---
 
-# Improving Interaction
+### Improving Human-Machine Interaction
 
-- Diverse fields might provide different solutions to enhance the *User Experience (UX)*:
+- Diverse fields provide diverse solutions to improve *Human-Machine Interaction (HCI)*:
 
 {{% multicol %}}
 {{% col class="col-6" %}}
 {{% centered %}}
-**Eye-Tracking Technology**
-{{< figure src="eyes.jpg" width="50%">}}
+<div class="fragment" data-fragment-index="0">
+
+**Eye-Tracking Technology**<small> [1]</small>
+{{< figure src="eyes.jpg" width="40%">}}
+<small>[1] A. Poole and L. J. Ball, "Eye Tracking in HCI and Usability",<br> Research, IGI Global, 2006</small>
+</div>
 {{% /centered %}}
 {{% /col %}}
 {{% col class="col-6" %}}
 {{% centered %}}
-**Hand Gesture Recognition**
-{{< figure src="italian-hand.jpg" width="50%">}}
+
+<div class="fragment" data-fragment-index="1">
+
+**Hand Gesture Recognition**<small> [2]</small>
+{{< figure src="italian-hand.jpg" width="40%">}}
+<small> [2] D. Sarma and M. K. Bhuyan, “Methods, databases and recent advancement of vision-based hand gesture recognition for hci systems: A review”,<br> SN Computer Science, 2021</small>
+</div>
+
 {{% /centered %}}
 {{% /col %}}
 {{% col class="col-6" %}}
 {{% centered %}}
-**Augmented Reality (AR)**
-{{< figure src="ar.jpeg" width="50%">}}
+
+<div class="fragment" data-fragment-index="2">
+
+**Augmented Reality (AR)**<small> [3]</small>
+{{< figure src="ar.jpeg" width="40%">}}
+<small> [3] L. Jud, J. Fotouhi, O. Andronic, A. Aichmair, G. Osgood,
+N. Navab, and M. Farshad, “Applicability of augmented reality in
+orthopedic surgery – a systematic review,”<br> BMC Musculoskeletal
+Disorders, 2020 </small>
+</div>
 {{% /centered %}}
 {{% /col %}}
 {{% col class="col-6" %}}
 {{% centered %}}
-**Large Language Models (LLMs)**
-{{< figure src="llm.jpeg" width="50%">}}
+
+<div class="fragment" data-fragment-index="3">
+
+**Large Language Models (LLMs)**<small> [4]</small>
+{{< figure src="llm.jpeg" width="40%">}}
+<small>[4] S. Kapania, R. Wang, T. J.-J. Li, T. Li, and H. Shen, “”i’m categorizing
+llm as a productivity tool”: Examining ethics of llm use in hci research
+practices,” 2024.</small>
+</div>
+
 {{% /centered %}}
 {{% /col %}}
 {{% /multicol %}}
@@ -109,8 +135,11 @@ The effectiveness of a *Human-Machine Interface (HMI)* heavenly depends on facto
 ---
 # What about more general-purpose simulators?
 - **Graphical User Interfaces (GUIs)** are usually the most practical solution in regard to general-purpose simulations.
-- Most visualization research focus on adding features to GUIs while preserving usability.
-- By enforcing common design practices it is possible to add features while keeping the interface intuitive and user-friendly.
+
+{{% figure src="gui.gif" width="40%" %}}
+
+- Most research focus on **adding features** to GUIs while **preserving their usability**.
+  - By enforcing *common design practices* it is possible to add features while keeping the interface intuitive and user-friendly.
 
 ---
 
@@ -120,36 +149,52 @@ The effectiveness of a *Human-Machine Interface (HMI)* heavenly depends on facto
 {{< figure src="alchemist-logo.svg"  width="70%">}}
 {{% /col %}}
 {{% col class="col-10" %}} 
-- Alchemist started as a **general-purpose** simulator with *Command Line Interface* and gradually introduced a *Desktop GUI*.<br>
+- Alchemist<small>[5]</small> started as a **general-purpose** simulator with *Command Line Interface* and gradually introduced a *Desktop GUI*.<br>
 
 - A new migration to a *Web GUI* is being conducted to enhance **accessibility** and **usability** even more.
 {{% /col %}}
 {{% /multicol %}}
 
-{{< figure src="evolution.drawio.svg" >}}
+{{< figure src="evolution.drawio.svg" width="75%">}}
+
+<small style="text-align: left">
+[5] Pianini, D., Montagna, S., & Viroli, M. (2013). Chemical-oriented simulation of computational systems with ALCHEMIST. Journal of Simulation, 7(3), 202–215.</br>
+</small>
 
 ---
 
-# Can we even go beyond this?
+# Is it possible to improve UX even more?
 
-### Problems
+<div>
 
-- General-purpose simulators remain inherently complex tools due to the nature of the domains they address.
-- No matter how user-friendly the interface is, new users still need to learn how to use the simulator effectively.
-- *Domain knowledge* remains a big barrier for new users.
+- General-purpose simulators remain **inherently complex tools** due to the nature of the domains they address.
+- No matter how user-friendly the interface is, *new users still need to learn how to use the simulator effectively*.
+- **Domain knowledge** remains a big barrier for new users, especially if documentation is outdated<small>(😔)</small> or absent<small>(😭)</small>.
 
-### Possible Solutions
+</div>
 
-- Assist the user as much as possible, both in the process of configuring simulations and in interacting with the simulator.
-- Can Large Language Models (LLMs) help?
+
+<div class="fragment pt-5" data-fragment-index="0">
+
+## Simplifying the Learning Experience
+##### and making it less boring
+
+- **No one** likes to read long manuals or endless pages of documentation;
+
+- Users needs a way to learn how to set-up simulations and interact with them as quickly as possible;
+
+- Could **Large Language Models (LLMs)** enhance this assistance?
+
+</div>
 
 ---
 
-# An Example of LLM usage in Development
+## Usage of Large Language Models in other contexts
+### Pair Programming
 {{% multicol %}}
 {{% col class="col-11"%}}
-- LLMs are already used as **pair programming** tools (e.g. GitHub Copilot).
-    - and successfully speed up the development process.
+- LLMs are already successfully used as **pair programming** tools (e.g. GitHub Copilot)__*__;
+    - and gosh, if they can speed up the development process!
 - Common applications include *code generation*, *completion*, *refactoring* and *commenting*.
 {{% /col %}}
 {{% col class="col-1" %}}
@@ -157,13 +202,15 @@ The effectiveness of a *Human-Machine Interface (HMI)* heavenly depends on facto
 {{% /col %}}
 {{% /multicol %}}
 
-<video width="50%" src="copilot-example.mp4" autoplay></video>
+{{< figure src="copilot-example.gif" width="40%">}}
+<small>__*__ Github Copilot - Your AI pair programmer: [https://github.com/features/copilot](https://github.com/features/copilot)</small>
 
 ---
 
-# Possible Vision in the Simulation Domain
+# Vision - A possible application
+### LLM Companion for assisting in Simulation Development
 
-<section>
+<section class="pt-5">
   <div class="container">
     <div class="row d-flex justify-content-center">
       <div class="col">
@@ -175,29 +222,29 @@ The effectiveness of a *Human-Machine Interface (HMI)* heavenly depends on facto
             <i class="fas"></i>
           </div>
           <div class="card-body">
-            <div class="d-flex flex-row justify-content-start mb-4">
+            <div class="fragment d-flex flex-row justify-content-start mb-4"  data-fragment-index="0">
               <img src="user.png" alt="avatar 1" style="width: 75px; height: 100%;">
               <div class="mx-3 me-3 border bg-body" style="border-radius: 15px;">
                 <p class="px-3 small mb-0">Can you please generate a simulation where two devices, inside a self-organizing network, find the best path to communicate?</p>
               </div>
             </div>
-            <div class="d-flex flex-row justify-content-end mb-4">
+            <div class="fragment d-flex flex-row justify-content-end mb-4"  data-fragment-index="1">
               <div class="p-3 me-3 border bg-body-tertiary" style="border-radius: 15px;">
                 <p class="small mb-0">Sure! Here is the configuration file for the simulation you requested:</p>
               </div>
               <img src="alchemist-logo.svg" alt="avatar 1" style="width: 75px; height: 100%;">
             </div>
-            <div class="d-flex flex-row justify-content-end mb-4">
+            <div class="fragment d-flex flex-row justify-content-end mb-4"  data-fragment-index="2">
                 <img src="file.png" style="border-radius: 15px; width: 70px;">
                 <img src="alchemist-logo.svg" alt="avatar 1" style="width: 75px; height: 100%;">
             </div>
-            <div class="d-flex flex-row justify-content-end mb-4">
+            <div class="fragment d-flex flex-row justify-content-end mb-4"  data-fragment-index="3">
               <div class="p-3 me-3 border bg-body-tertiary" style="border-radius: 15px;">
                 <p class="small mb-0">
-                    The simulation uses the <u style="color: #39c0ed;">Collektive Incarnation</u>,
+                    The simulation uses the <u style="color: #39c0ed;">Collektive Incarnation</u><small>[6]</small>, an implementation
                     designed to leverage aggregate computing for modeling network behaviors.
                     I've also included the Web GUI <u style="color: #39c0ed;">Output Monitor</u>, you can view the simulation in real-time at <u style="color: #39c0ed;">localhost:8080</u>.
-                    For more details about the Collektive incarnation, you can refer to the <u style="color: #39c0ed;">related documentation</u>.<br>
+                    For more details about the Collektive incarnation, you can refer to the <u style="color: #39c0ed;">related documentation</u>.
                     Would you like me to run the simulation for you?
                 </p>
               </div>
@@ -208,16 +255,20 @@ The effectiveness of a *Human-Machine Interface (HMI)* heavenly depends on facto
       </div>
     </div>
   </div>
+<small>
+[6] Cortecchia, A., (2024). Multiplatform Self-Organizing Systems Through a Kotlin-MP Implementation of Aggregate Computing. International Conference on ACSOS 2024.</br>
+</small>
 </section>
+
 
 ---
 # Lot of Unexplored Possibilities
 
 {{% multicol %}}
 {{% col class="col-7" %}} 
-- There are many models and techniques available for applying LLMs to specific use cases.
+- There are *many models and techniques* available for applying LLMs to specific use cases.
 
-- An example, the **ReAct (Reason + Act)** prompting technique focuses on generating both *reasoning traces* and *task-specific actions*.
+- An example, the **ReAct (Reason + Act)** prompting technique <small>[7]</small> focuses on generating both *reasoning traces* and *task-specific actions*.
     - Moreover, the framework is also able to retrieve information from external environments (e.g. Wikipedia).
 
 {{< figure src="question.png" >}}
@@ -227,6 +278,11 @@ The effectiveness of a *Human-Machine Interface (HMI)* heavenly depends on facto
 {{% /col %}}
 {{% /multicol %}}
 
+<small>[7] S. Yao, J. Zhao, D. Yu, N. Du, I. Shafran, K. R. Narasimhan, and
+Y. Cao, “React: Synergizing reasoning and acting in language models,”
+in The Eleventh International Conference on Learning Representations,
+ICLR 2023, Kigali, Rwanda, May 1-5, 2023. OpenReview.net, 2023.</small>
+
 ---
 
 # Conclusion
@@ -235,7 +291,7 @@ The effectiveness of a *Human-Machine Interface (HMI)* heavenly depends on facto
   - As of today, *LLMs* are promising tools, already used in similar contexts.
 
 - Will simulators embrace new technologies to improve the User eXperience?
-- How to *effectively design* an LLM that can assist users in interacting with simulations?
+- How to *effectively design* a LLM that can assist users in interacting with simulations?
     - And what are the most important **features to include**?
 
 
@@ -244,6 +300,7 @@ The effectiveness of a *Human-Machine Interface (HMI)* heavenly depends on facto
 ---
 
 # Thank you for your attention!
+<small> **Angelo Filaseta** - angelo.filaseta@unibo.it</small>
 
 {{< figure src="questions.webp" width="15%">}}
 
@@ -253,5 +310,6 @@ The effectiveness of a *Human-Machine Interface (HMI)* heavenly depends on facto
 
 - [Flaticon](https://www.flaticon.com/) has been used to retrieve some icons: credits to *Design Circle*, *Dimitry Miroliubov*, *Freepik*;
 - [Giphy](https://giphy.com/) has been used to retrieve some gifs and stickers, credits to *Mostly ADHD Comics*, *Bratcole*, *WimpyKid*.
+- [Vecteezy.com](https://www.vecteezy.com/) has been used to retrieve some videso, credits to *shutter2u*.
 
 </small>
