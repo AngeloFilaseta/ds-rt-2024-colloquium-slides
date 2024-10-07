@@ -55,27 +55,6 @@ aliases = [
 
 ---
 
-# A matter of Balance
-
-{{< figure src="balance.webp" width="10%">}}
-
-The effectiveness of a *Human-Machine Interface (HMI)* heavenly depends on factors that can balance both ...
-
-{{% multicol %}}
-{{% col %}}
-## Usability 
-{{% tick %}} Intuitive and user-friendly, easy to use;<br>
-{{% cross %}} Usually lacking advanced features.
-{{% /col %}}
-{{% col %}}
-## Functionality
-{{% tick %}} Rich set of extensive features and capabilities;<br>
-{{% cross %}} Can be overly complex to use and understand.
-{{% /col %}}
-{{% /multicol %}}
-
----
-
 ### Improving Human-Machine Interaction
 
 - Diverse fields provide different solutions to improve *Human-Machine Interaction (HCI)*:
@@ -144,6 +123,27 @@ practices,” 2024.</small>
   - By enforcing *common design practices* it is possible to add features while keeping the interface intuitive and user-friendly.
 
 <small>__*__ [https://alchemistsimulator.github.io/](https://alchemistsimulator.github.io/)</small>
+
+---
+
+# A matter of Balance
+
+{{< figure src="balance.webp" width="10%">}}
+
+The effectiveness of a *Human-Machine Interface (HMI)* heavenly depends on factors that can balance both ...
+
+{{% multicol %}}
+{{% col %}}
+## Usability
+{{% tick %}} Intuitive and user-friendly, easy to use;<br>
+{{% cross %}} Usually lacking advanced features.
+{{% /col %}}
+{{% col %}}
+## Functionality
+{{% tick %}} Rich set of extensive features and capabilities;<br>
+{{% cross %}} Can be overly complex to use and understand.
+{{% /col %}}
+{{% /multicol %}}
 
 ---
 
