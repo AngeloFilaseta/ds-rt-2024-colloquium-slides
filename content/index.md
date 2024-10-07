@@ -314,6 +314,5 @@ ICLR 2023, Kigali, Rwanda, May 1-5, 2023. OpenReview.net, 2023.</small>
 
 - [Flaticon](https://www.flaticon.com/) has been used to retrieve some icons: credits to *Design Circle*, *Dimitry Miroliubov*, *Freepik*;
 - [Giphy](https://giphy.com/) has been used to retrieve some gifs and stickers, credits to *Mostly ADHD Comics*, *Bratcole*, *WimpyKid*.
-- [Vecteezy.com](https://www.vecteezy.com/) has been used to retrieve some videso, credits to *shutter2u*.
 
 </small>
