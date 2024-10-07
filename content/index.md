@@ -77,7 +77,7 @@ The effectiveness of a *Human-Machine Interface (HMI)* heavenly depends on facto
 
 ### Improving Human-Machine Interaction
 
-- Diverse fields provide diverse solutions to improve *Human-Machine Interaction (HCI)*:
+- Diverse fields provide different solutions to improve *Human-Machine Interaction (HCI)*:
 
 {{% multicol %}}
 {{% col class="col-6" %}}
@@ -133,7 +133,7 @@ practices,” 2024.</small>
 {{% /multicol %}}
 
 ---
-# What about more general-purpose simulators?
+# What about general-purpose simulators?
 - **Graphical User Interfaces (GUIs)** are usually the most practical solution in regard to general-purpose simulations.
 
 {{% figure src="gui.gif" width="40%" %}}
@@ -143,7 +143,7 @@ practices,” 2024.</small>
 
 ---
 
-# The Alchemist Simulator Case
+# A Case Study:  The Alchemist Simulator
 {{% multicol %}}
 {{% col class="col-2"%}}
 {{< figure src="alchemist-logo.svg"  width="70%">}}
