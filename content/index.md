@@ -41,7 +41,8 @@ aliases = [
 - For this reason, *observability* is a crucial aspect of simulations;
   - A **graphical representation** is highly beneficial for visualizing how a system evolves over time.
 
-- Another key aspect is *interaction*, since changing the simulation specification can lead to different outcomes;
+- *Interaction* is another key aspect;
+  - different simulations' specifications can lead to different outcomes, thus allowing to **explore** the system behavior.
 
 {{% multicol %}}
 {{% col class="text-center"%}}
@@ -136,10 +137,13 @@ practices,” 2024.</small>
 # What about general-purpose simulators?
 - **Graphical User Interfaces (GUIs)** are usually the most practical solution in regard to general-purpose simulations.
 
-{{% figure src="gui.gif" width="40%" %}}
+{{% figure src="alchemist-video.gif" width="40%" %}}
+<small>Alchemist Simulator - Desktop GUI __*__</small>
 
 - Most research focus on **adding features** to GUIs while **preserving their usability**.
   - By enforcing *common design practices* it is possible to add features while keeping the interface intuitive and user-friendly.
+
+<small>__*__ [https://alchemistsimulator.github.io/](https://alchemistsimulator.github.io/)</small>
 
 ---
 
@@ -163,7 +167,7 @@ practices,” 2024.</small>
 
 ---
 
-# Is it possible to improve UX even more?
+# Improving the User eXperience
 
 <div>
 
@@ -195,7 +199,7 @@ practices,” 2024.</small>
 {{% col class="col-11"%}}
 - LLMs are already successfully used as **pair programming** tools (e.g. GitHub Copilot)__*__;
     - and gosh, if they can speed up the development process!
-- Common applications include *code generation*, *completion*, *refactoring* and *commenting*.
+- Common applications include *code generation*, *refactoring* and *commenting*.
 {{% /col %}}
 {{% col class="col-1" %}}
 {{< figure src="pinguin.webp" width="100%">}}
