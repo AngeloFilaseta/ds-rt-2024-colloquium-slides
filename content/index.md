@@ -55,6 +55,60 @@ aliases = [
 
 ---
 
+# What about general-purpose simulators?
+- **Graphical User Interfaces (GUIs)** are usually the most practical solution in regard to general-purpose simulations.
+
+{{% figure src="alchemist-video.gif" width="40%" %}}
+<small>Alchemist Simulator - Desktop GUI __*__</small>
+
+- Most research focus on **adding features** to GUIs while **preserving their usability**.
+  - By enforcing *common design practices* it is possible to add features while keeping the interface intuitive and user-friendly.
+
+<small>__*__ [https://alchemistsimulator.github.io/](https://alchemistsimulator.github.io/)</small>
+
+---
+
+# A matter of Balance
+
+{{< figure src="balance.webp" width="10%">}}
+
+The effectiveness of a *Human-Machine Interface (HMI)* heavenly depends on factors that can balance both ...
+
+{{% multicol %}}
+{{% col %}}
+## Usability
+{{% tick %}} Intuitive and user-friendly, easy to use;<br>
+{{% cross %}} Usually lacking advanced features.
+{{% /col %}}
+{{% col %}}
+## Functionality
+{{% tick %}} Rich set of extensive features and capabilities;<br>
+{{% cross %}} Can be overly complex to use and understand.
+{{% /col %}}
+{{% /multicol %}}
+
+---
+
+# A Case Study:  The Alchemist Simulator
+{{% multicol %}}
+{{% col class="col-2"%}}
+{{< figure src="alchemist-logo.svg"  width="70%">}}
+{{% /col %}}
+{{% col class="col-10" %}}
+- Alchemist<small>[5]</small> started as a **general-purpose** simulator with *Command Line Interface* and gradually introduced a *Desktop GUI*.<br>
+
+- A new migration to a *Web GUI* is being conducted to enhance **accessibility** and **usability** even more.
+  {{% /col %}}
+  {{% /multicol %}}
+
+{{< figure src="evolution.drawio.svg" width="75%">}}
+
+<small style="text-align: left">
+[5] Pianini, D., Montagna, S., & Viroli, M. (2013). Chemical-oriented simulation of computational systems with ALCHEMIST. Journal of Simulation, 7(3), 202–215.</br>
+</small>
+
+---
+
 ### Improving Human-Machine Interaction
 
 - Diverse fields provide different solutions to improve *Human-Machine Interaction (HCI)*:
@@ -112,60 +166,7 @@ practices,” 2024.</small>
 {{% /col %}}
 {{% /multicol %}}
 
----
-# What about general-purpose simulators?
-- **Graphical User Interfaces (GUIs)** are usually the most practical solution in regard to general-purpose simulations.
-
-{{% figure src="alchemist-video.gif" width="40%" %}}
-<small>Alchemist Simulator - Desktop GUI __*__</small>
-
-- Most research focus on **adding features** to GUIs while **preserving their usability**.
-  - By enforcing *common design practices* it is possible to add features while keeping the interface intuitive and user-friendly.
-
-<small>__*__ [https://alchemistsimulator.github.io/](https://alchemistsimulator.github.io/)</small>
-
----
-
-# A matter of Balance
-
-{{< figure src="balance.webp" width="10%">}}
-
-The effectiveness of a *Human-Machine Interface (HMI)* heavenly depends on factors that can balance both ...
-
-{{% multicol %}}
-{{% col %}}
-## Usability
-{{% tick %}} Intuitive and user-friendly, easy to use;<br>
-{{% cross %}} Usually lacking advanced features.
-{{% /col %}}
-{{% col %}}
-## Functionality
-{{% tick %}} Rich set of extensive features and capabilities;<br>
-{{% cross %}} Can be overly complex to use and understand.
-{{% /col %}}
-{{% /multicol %}}
-
----
-
-# A Case Study:  The Alchemist Simulator
-{{% multicol %}}
-{{% col class="col-2"%}}
-{{< figure src="alchemist-logo.svg"  width="70%">}}
-{{% /col %}}
-{{% col class="col-10" %}} 
-- Alchemist<small>[5]</small> started as a **general-purpose** simulator with *Command Line Interface* and gradually introduced a *Desktop GUI*.<br>
-
-- A new migration to a *Web GUI* is being conducted to enhance **accessibility** and **usability** even more.
-{{% /col %}}
-{{% /multicol %}}
-
-{{< figure src="evolution.drawio.svg" width="75%">}}
-
-<small style="text-align: left">
-[5] Pianini, D., Montagna, S., & Viroli, M. (2013). Chemical-oriented simulation of computational systems with ALCHEMIST. Journal of Simulation, 7(3), 202–215.</br>
-</small>
-
----
+----
 
 # Improving the User eXperience
 
@@ -193,7 +194,7 @@ The effectiveness of a *Human-Machine Interface (HMI)* heavenly depends on facto
 
 ---
 
-## Usage of Large Language Models in other contexts
+## Large Language Models in other contexts
 ### Pair Programming
 {{% multicol %}}
 {{% col class="col-11"%}}
