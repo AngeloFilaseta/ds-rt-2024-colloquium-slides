@@ -42,7 +42,7 @@ aliases = [
   - A **graphical representation** is highly beneficial for visualizing how a system evolves over time.
 
 - *Interaction* is another key aspect;
-  - different simulations' specifications can lead to different outcomes, thus allowing to **explore** the system behavior.
+  - essential functionalities could be *pausing*, *resuming*, *focusing on specific* parts of the simulation...
 
 {{% multicol %}}
 {{% col class="text-center"%}}
