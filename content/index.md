@@ -38,7 +38,7 @@ aliases = [
 - Simulations are essential tools for *observing* complex systems and phenomena;
   - They allow to **validate** theories by comparing outcomes with expected or real-world behavior;
 
-- For this reason, *observability* is a crucial aspect of simulations;
+- *Observability* is a crucial aspect of simulations;
   - A **graphical representation** is highly beneficial for visualizing how a system evolves over time.
 
 - *Interaction* is another key aspect;
