@@ -42,7 +42,7 @@ aliases = [
   - A **graphical representation** is highly beneficial for visualizing how a system evolves over time.
 
 - *Interaction* is another key aspect;
-  - essential functionalities could be *pausing*, *resuming*, *focusing on specific* parts of the simulation...
+  - essential functionalities may be *pausing*, *resuming*, *focusing on specific* parts of the simulation...
 
 {{% multicol %}}
 {{% col class="text-center"%}}
@@ -183,8 +183,6 @@ practices,” 2024.</small>
 
 ## Simplifying the Learning Experience
 ##### and making it less boring
-
-- **No one** likes to read long manuals or endless pages of documentation;
 
 - Users needs a way to learn how to set-up simulations and interact with them as quickly as possible;
 
